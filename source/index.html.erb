@@ -1,0 +1,142 @@
+---
+title: Aaron + Erika
+---
+
+<div class="container">
+
+    <h1 class="headline"><b>Aaron Nunley & Erika Brown</b> (A couple of very classy people) are going to be getting
+        <b>married</b>
+        in the wonderful and elegant
+        <b>Crocker Art Museum</b> in <b>Sacramento, California</b>
+        on <b>October 1, 2016 at 6 PM</b>. It'll be <b>fun</b>. It'll be a <b>party</b>.  Here's some information about the whole affair.</h1>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!--
+        <ol class="carousel-indicators">
+            <% 7.times do |num| %>
+            <%= tag :li, :"data-target" => "#carousel-example-generic", :"data-slide-to" => num, :class => (num == 0)? 'active' : ''  %>
+            <% end %>
+        </ol>
+      -->
+        <div class="carousel-inner" role="listbox">
+            <% 11.times do |num| %>
+            <div class="carousel-item<%= (num == 0)? ' active' : '' %>">
+                <%= tag :img, :src => "/assets/images/slides/slide_#{num}.jpg" %>
+            </div>
+            <% end %>
+        </div>
+          <!--
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+      -->
+    </div>
+
+    <div class="card-columns">
+
+        <% partial(:cardimage, :locals => {}) %>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">The Venue</h4>
+                <p class="card-text">After a fair amount of searching for the right place to get married, the Crocker Art Museum seemed like the absolute best choice for us. If you happen to be so inclined to visit the museum during your trip to Sacramento, we'd advise coming a couple hours early to enjoy the museum in all it's grandeur.</p>
+            </div>
+        </div>
+
+        <%= partial(:factoid) %>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">The Wedding</h4>
+                <p class="card-text">Our wedding ceremony will take place in the opulent ballroom in the historic gallery building of the Crocker Art Museum at 6 PM on October 1, 2016.  Cocktails and a reception will follow the ceremony.</p>
+            </div>
+        </div>
+
+        <%= partial(:factoid) %>
+
+        <div class="card card-block">
+            <h4 class="card-title">Attire</h4>
+            <p class="card-text">We politely ask that our guests wear clothes to our wedding. Cocktail attire is encouraged, even recommended. Required is a strong word, but how would you feel being the only person at the wedding wearing a knit romper? You'd
+                look silly. Nobody wants you to look silly.</p>
+        </div>
+
+        <%= partial(:factoid) %>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">The Sacramento Area</h4>
+                <p class="card-text">Sacramento is a mystery to some of our friends from out of the area. We've taken it upon ourselves to make a fun little map in Google Maps with some of our favorite places to eat or do things as well as other useful wedding related stuff. And don't forget that San Francisco is all of a 90 minute drive if you wanted to make that part of your weekend.</p>
+                <%= link_to 'Our Google Map', 'https://www.google.com/maps/@38.6174057,-121.5240893,13z/data=!3m1!4b1!4m2!6m1!1sz0Ynd3HjN0nQ.kU-chBjHQASI', :target => '_blank', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+        <%= partial(:factoid) %>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">The Weather</h4>
+                <p class="card-text">The weather in Sacramento on the first of October is generally rather pleasant. Look for it to be in the seventies or low eighties in the early evening around the time of the ceremony. It'll cool off to the mid-sixties as the evening continues. The Crocker is right next to the Sacramento River, so that should do something to keep things from getting too roasty toasty.</p>
+                <%= link_to 'Current Weather', 'https://weather.com/weather/today/l/38.57,-121.44', :target => '_blank', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+        <%= partial(:factoid) %>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Transportation</h4>
+                <p class="card-text">Do you typically rent cars and hail cabs?  You can probably get around in the Sacramento area for a day or two without your own car by using Uber to get you from place to place.  In case you're part of the remaining several people on the planet who don't use Uber already, sign up with our referral code and get $10 off your first ride.</p>
+                <%= link_to 'Uber', 'https://www.uber.com/invite/aeof0', :target => '_blank', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">The Citizen</h4>
+                <p class="card-text">We have a block of rooms available at The Citizen.  It is centrally located within walking distance of a variety of places to eat and drink, though we recommend taking a car to get to The Crocker as it may be a bit too far to comfortably walk.  Our block is available on a first come first serve basis, so please keep that in mind when trying to book a room.</p>
+                <%= link_to 'Book Now',
+                'http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Brown/Nunley%20Wedding%20Events%5Esacak%60nw6nw6b%7Cnw6nw6c%60152.00%60USD%60false%604%609/27/16%6010/5/16%609/10/16&app=resvlink&stop_mobi=yes', :target =>
+                '_blank', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Embassy Suites</h4>
+                <p class="card-text">The Embassy Suites are located a 5 minute walk from The Crocker so it's a simple affair to saunter over when it's getting to be about time.  They're right on the river adjacent to the Tower Bridge and you'll have a good chance to get some lovely sunset photos.</p>
+                <%= link_to 'Book Now', 'http://embassysuites3.hilton.com/en/hotels/california/embassy-suites-by-hilton-sacramento-riverfront-promenade-SACESES/index.html', :target => '_blank', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Hotel Tonight</h4>
+                <p class="card-text">Oh, you didn't plan ahead?  You're just going to roll in to a living breathing metropolis and expect to find a place to stay on zero notice?  Yeah, someone made an app for that.  We've found it to work pretty well for us more than a few times.  Give it a go.  Your other option is pitching a tent down by the river, but we don't really recommend that.</p>
+                <%= link_to 'Book Last Minute', 'http://txt.htltn.com/8jkb/R91eX8dq5q', :target => '_blank', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Registry</h4>
+                <p class="card-text">So we created a registry solely for the purpose of making sure we didn't get several nearly identical sets of china for our wedding.  Being that we're two relatively well established adults who combined two homes into one over the last few years, we had a fair amount of stuff already.  That said, we took time to take inventory of what we have versus what we'd like to upgrade and augment and used Zola to help coordinate the whole thing.</p>
+                <%= link_to 'Visit Zola', 'https://www.zola.com/registry/erikaandaaron', :target => '_blank', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Contact Us</h4>
+                <p class="card-text">Do you have questions?  Did we not answer them in a series of small boxes full of text?  Do you have certain dietary considerations that will need to be accommodated at the reception?  What on Earth could you possibly need?</p>
+                <%= link_to 'Email Us', 'mailto:aaronerikanunley@gmail.com', :class => 'btn btn-primary' %>
+            </div>
+        </div>
+
+    </div>
+
+</div>
