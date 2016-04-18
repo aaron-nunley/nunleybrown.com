@@ -49,6 +49,7 @@ title: Aaron + Erika
             <div class="card-block">
                 <h4 class="card-title">The Sacramento Area</h4>
                 <p class="card-text">Sacramento is a mystery to some of our friends from out of the area. We've taken it upon ourselves to make a fun little city guide in Google Maps with some of our favorite places to eat and things to do, as well as other useful wedding-related stuff. And don't forget that San Francisco is all of a 90 minute drive, if you want to make that part of your weekend.</p>
+                <p class="card-text">We're sorry to say you'll need to view our customized map from within a desktop or tablet browser versus your mobile phone.  Blame Google.  Go write a letter or something.</p>
                 <%= link_to 'Our Google Map', 'https://www.google.com/maps/@38.6174057,-121.5240893,13z/data=!3m1!4b1!4m2!6m1!1sz0Ynd3HjN0nQ.kU-chBjHQASI', :target => '_blank', :class => 'btn btn-primary' %>
             </div>
         </div>
@@ -78,9 +79,10 @@ title: Aaron + Erika
         <div class="card">
             <div class="card-block">
                 <h4 class="card-title">The Citizen</h4>
-                <p class="card-text">We have a block of discounted rooms available at The Citizen Hotel.  It is centrally located within walking distance of a variety of places to eat and drink, though we recommend taking a car to get to The Crocker as it may be a bit too far to comfortably walk, at just over a mile away.  Our reserved block is available on a first-come, first-served basis, so please keep that in mind when trying to book a room.</p>
-                <p class="card-text">At the moment, there's something strange going on with our room block, so please call Zach Havrilla, the reservations coordinator at The Citizen at 916-492-4420 and he should be able to sort you out.</p>
-                <% link_to 'Book Now',
+
+                <p class="card-text">We have a block of discounted rooms available at The Citizen Hotel. It is centrally located within walking distance of a variety of places to eat and drink, though we recommend taking a car to get to The Crocker, which is just over a mile away. Our reserved block is available on a first-come, first-served basis for the night of October 1st only, so please keep that in mind when trying to book a room.</p>
+                <p class="card-text">If you're having trouble booking a room through the link or would like to book additional nights, call Zach Havrilla, the reservations coordinator at <%= link_to '(916) 492-4420', 'tel:9264924420', :'data-event-category' => 'telephone', :'data-event-action' => 'Citizen Reservation Coordinator' %> or the direct reservations line at <%= link_to '(916) 492-4460', 'tel:9264924460', :'data-event-category' => 'telephone', :'data-event-action' => 'Citizen Reservations' %>.</p>
+                <%= link_to 'Book Now',
                 'http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Brown/Nunley%20Wedding%20Events%5Esacak%60nw6nw6b%7Cnw6nw6c%60152.00%60USD%60false%604%609/27/16%6010/5/16%609/10/16&app=resvlink&stop_mobi=yes', :target =>
                 '_blank', :class => 'btn btn-primary' %>
             </div>
